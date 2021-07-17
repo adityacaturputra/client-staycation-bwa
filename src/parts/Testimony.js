@@ -26,7 +26,7 @@ export default function Testimony({ data }) {
         <div className="col">
           <h4 style={{ marginBottom: 40 }}>{data.name}</h4>
           <Star value={data.rate} width={35} height={35} spacing={4} />
-          <h5 className="h2 font-weight-light line-height-2 my-3">
+          <h5 className="h2 font-weight-light line-height-2 my-5">
             {data.content}
           </h5>
           <span className="text-gray-500">
