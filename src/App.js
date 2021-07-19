@@ -1,7 +1,7 @@
 import "assets/scss/style.scss";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import LandingPage from "pages/LandingPage";
-import Example from "elements/Form/InputDate/Example";
+import Example from "elements/Breadcrumb/Example";
 import "assets/scss/style.scss";
 
 function App() {
