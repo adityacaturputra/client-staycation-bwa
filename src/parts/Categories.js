@@ -9,14 +9,14 @@ export default function Categories({ data }) {
         <section className="container" key={`category-${index1}`}>
           <h4 className="mb-3 font-weight-medium">{category.name}</h4>
           <div className="container-grid">
-            {category.items.length === 0 ? (
+            {category.itemId.length === 0 ? (
               <div className="row">
                 <div className="col-auto align-items-center">
                   There is no property at this category
                 </div>
               </div>
             ) : (
-              category.items.map((item, index2) => {
+              category.itemId.map((item, index2) => {
                 return (
                   <Fade right delay={100 * index2}>
                     <div
@@ -32,7 +32,7 @@ export default function Categories({ data }) {
                         )}
                         <figure className="img-wrapper" style={{ height: 180 }}>
                           <img
-                            src={item.imageUrl}
+                            src={item.imageId[0] ? `${process.env.REACT_APP_HOST}/${item.imageId[0].imageUrl}` : ""}
                             alt={item.name}
                             className="img-cover"
                           />
