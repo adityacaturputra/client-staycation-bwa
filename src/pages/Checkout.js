@@ -61,8 +61,6 @@ class Checkout extends Component {
     
     this.props.submitBooking(payload).then(() => {
       nextStep()
-    }).catch((error) => {
-      console.log(error)
     })
   }
 
