@@ -13,6 +13,7 @@ import Testimony from "parts/Testimony";
 import Footer from "parts/Footer";
 
 import Fade from "react-reveal/Fade";
+import Loader from "parts/Loader";
 
 
 class DetailsPage extends Component {
@@ -27,7 +28,7 @@ class DetailsPage extends Component {
 
   render() {
     const { page, match } = this.props
-    if(!page[match.params.id]) return null
+    if(!page[match.params.id]) return <Loader />
     const breadcrumb = [
       { pageTitle: "Home", pageHref: "" },
       { pageTitle: "House Details", pageHref: "" },

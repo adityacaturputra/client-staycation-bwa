@@ -7,6 +7,7 @@ import MostPicked from "parts/MostPicked";
 import Categories from "parts/Categories";
 import Testimony from "parts/Testimony";
 import Footer from "parts/Footer";
+import Loader from "parts/Loader";
 
 class LandingPage extends Component {
   constructor(props) {
@@ -26,7 +27,7 @@ class LandingPage extends Component {
   render() {
 
     const {page} = this.props
-    if(!page.hasOwnProperty("landingPage")) return null
+    if(!page.hasOwnProperty("landingPage")) return <Loader />
     return (
       <>
         <Header {...this.props} />
