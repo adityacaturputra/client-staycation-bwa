@@ -2,7 +2,8 @@
 Web App for booking hotels or any places that provides vacation.
 This repository used as a place for practice on the mern 2020 course on buildwithangga and as task submission for Implementasi Sistem Informasi.
 You can find backend, rest-api, and Content Management System for this app at repository: https://github.com/adityacaturputra/server-staycation-bwa
-<b/>readmore : https://docs.google.com/document/d/1caXOPw-h-ZF-HesUViylZidcL4gOkN4wmeGcLdDklRk/edit?usp=sharing
+
+readmore : https://docs.google.com/document/d/1caXOPw-h-ZF-HesUViylZidcL4gOkN4wmeGcLdDklRk/edit?usp=sharing
 
 TechStack: React Js, react-router, Redux, Bootstraps, SCSS
 
